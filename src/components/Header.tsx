@@ -5,6 +5,7 @@ export default function Header(){
 
     return(
         <header>
+            <section>
             <div className="background-color"></div>
             <div className="background-color2"></div>
             <nav>
@@ -31,6 +32,8 @@ export default function Header(){
               </div>
                 <img src={lifter} alt="main lifting weights" />
             </div>
+            </section>
+         
         </header>
     )
 }
