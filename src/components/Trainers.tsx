@@ -1,5 +1,12 @@
 import manAndWoman from "../images/man-and-woman.jpg";
+import discountMan from '../images/discount.jpg'
 export default function Trainers() {
+    const discountBackgroundDiv:React.CSSProperties = {
+        backgroundImage: `url(${discountMan})`,
+        backgroundPosition:'center',
+        backgroundSize:'cover'
+    }
+
   return (
     <div className="trainer-content">
       <div className="man-and-woman">
@@ -57,7 +64,7 @@ export default function Trainers() {
           </div>
         </div>
       </div>
-      <div className="discount-offer ">
+      <div className="discount-offer  ">
         <div className="offer-equipment ">
           <div className="other-equipment">
             <h2>Best Training</h2>
@@ -97,7 +104,12 @@ export default function Trainers() {
             </p>
           </div>
         </div>
-        <div className="percentage-picture"></div>
+        <div className="percentage-picture" style={discountBackgroundDiv}>
+            <div>
+                <span>35%</span>
+                <p>DISCOUNT</p>
+            </div>
+        </div>
       </div>
     </div>
   );
