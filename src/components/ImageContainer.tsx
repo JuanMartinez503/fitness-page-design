@@ -14,8 +14,10 @@ export default function ImageContainer({ src, name, duration }: ImageContainerPr
   return (
     <div className="image-container">
       <div style={containerStyle}>
-        <h3 className="name">{name}</h3>
+      <div className="exercise-content">
+      <h3 className="name">{name}</h3>
         <p className="duration">{duration}</p>
+      </div>
       </div>
     </div>
   );
