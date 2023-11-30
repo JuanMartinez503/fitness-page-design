@@ -349,6 +349,10 @@ z-index: 10;
   margin-bottom: 40%;
   background-color: black;
   border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  
   
 }
 .classes-description {
@@ -359,10 +363,22 @@ z-index: 10;
   height: 100%;
   
   right: -20%;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.5);
   box-shadow: 0 0 10px rgba(0,0,0,.3);
   z-index: -1;
   border-radius: 10px;
+}
+.classes-description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  filter: blur(10px);
+  z-index: -5;
+
 }
 
 .classes-description p {
@@ -370,9 +386,10 @@ z-index: 10;
   bottom: 5%;
 }
 .classes-description h3 {
+  width: 100%;
   position: absolute;
   font-weight: 600;
-  bottom: 40%;
-  right: -30%;
+  bottom: 50%;
+  right: -40%;
   transform: rotate(-90deg);
 }

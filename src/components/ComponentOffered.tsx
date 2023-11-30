@@ -1,14 +1,23 @@
+import React from "react"
 
-export default function ComponentOffered (){
+type ComponentOfferedProps = {
+    src: string;
+    duration:string;
+    className:string;
+}
 
+export default function ComponentOffered ({src,className,duration}:ComponentOfferedProps){
+const backgroundImage:React.CSSProperties = {
+backgroundImage:`url(${src})`
+}
     return (
         <div className="classes-offered">
-            <div className="classes-image">
+            <div className="classes-image" style={backgroundImage}>
             <div className="classes-description">
                 <p>
-                Duration: 50 minutes
+                Duration: {duration}
                 </p>
-                <h3>BODY BUILDING CLASS</h3>
+                <h3>{className}</h3>
             </div>
             </div>
       
