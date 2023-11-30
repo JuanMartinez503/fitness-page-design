@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Header from './components/Header.tsx'
 import Trainers from './components/Trainers.tsx'
+import ClassesProvided from './components/ClassesProvided.tsx'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <main>
       <Trainers />
+      <ClassesProvided />
     </main>
     </>
   )
