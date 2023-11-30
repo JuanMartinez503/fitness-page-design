@@ -1,16 +1,16 @@
 import manAndWoman from "../images/man-and-woman.jpg";
-import discountMan from '../images/discount.jpg'
+import discountMan from "../images/discount.jpg";
 export default function Trainers() {
-    const discountBackgroundDiv:React.CSSProperties = {
-        backgroundImage: `url(${discountMan})`,
-        backgroundPosition:'center',
-        backgroundSize:'cover'
-    }
+  const discountBackgroundDiv: React.CSSProperties = {
+    backgroundImage: `url(${discountMan})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  };
 
   return (
     <div className="trainer-content">
       <div className="man-and-woman">
-        <img src={manAndWoman} alt="man and woman flexing" />
+        <img src={manAndWoman} loading="lazy" alt="man and woman flexing" />
         <div className="play-div play-div-1">
           <i className="fa-solid fa-play yellow"></i>
           <i className="fa-solid fa-play yellow"></i>
@@ -39,7 +39,7 @@ export default function Trainers() {
       <div className="equipment">
         <h3 className="yellow">Science 2005</h3>
         <h2>
-          BEST <span className="yellow">EQUIPMENTS & FITNESS TRAINERS</span>
+          BEST <span className="yellow">EQUIPMENTS & FITNESS </span>TRAINERS
         </h2>
         <p>
           Regular gym workouts are crucial for maintaining physical health and
@@ -67,48 +67,70 @@ export default function Trainers() {
       <div className="discount-offer  ">
         <div className="offer-equipment ">
           <div className="other-equipment">
-            <h2>Best Training</h2>
-            <p>
-              At our gym, we pride ourselves on delivering the best training
-              experience by offering personalized workout programs, expert
-              guidance from certified trainers, and state-of-the-art facilities,
-              ensuring our members achieve their fitness goals with unparalleled
-              support and results.
-            </p>
+            <div>
+              <i className="fa-solid fa-dumbbell"></i>
+            </div>
+            <div>
+              <h2>Best Training</h2>
+              <p>
+                At our gym, we pride ourselves on delivering the best training
+                experience by offering personalized workout programs, expert
+                guidance from certified trainers, and state-of-the-art
+                facilities, ensuring our members achieve their fitness goals
+                with unparalleled support and results.
+              </p>
+            </div>
           </div>
           <div className="other-equipment">
-            <h2>Qualified Instructor</h2>
-            <p>
-              Our gym boasts a team of highly qualified instructors who bring a
-              wealth of expertise and passion, ensuring members receive
-              top-notch guidance and motivation to optimize their fitness
-              journey.
-            </p>
+            <div>
+            <i className="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div>
+              <h2>Qualified Instructor</h2>
+              <p>
+                Our gym boasts a team of highly qualified instructors who bring
+                a wealth of expertise and passion, ensuring members receive
+                top-notch guidance and motivation to optimize their fitness
+                journey.
+              </p>
+            </div>
           </div>
           <div className="other-equipment">
-            <h2>Latest Equipment</h2>
-            <p>
-              Equipped with the latest cutting-edge fitness technology, our gym
-              provides a premier workout experience, allowing members to harness
-              the power of state-of-the-art equipment for effective and
-              enjoyable training sessions.
-            </p>
+            <div>
+              <i className="fa-sharp fa-thin fa-dumbbell"></i>
+            </div>
+            <div>
+              {" "}
+              <h2>Latest Equipment</h2>
+              <p>
+                Equipped with the latest cutting-edge fitness technology, our
+                gym provides a premier workout experience, allowing members to
+                harness the power of state-of-the-art equipment for effective
+                and enjoyable training sessions.
+              </p>
+            </div>
           </div>
           <div className="other-equipment">
-            <h2> Award Winners</h2>
-            <p>
-              Proud recipients of prestigious fitness industry awards, our gym
-              stands as a recognized leader, celebrated for its commitment to
-              excellence, innovation, and unwavering dedication to delivering
-              outstanding fitness services to our valued members.
-            </p>
+            <div>
+              <i className="fa-solid fa-trophy"></i>
+            </div>
+            <div>
+              {" "}
+              <h2> Award Winners</h2>
+              <p>
+                Proud recipients of prestigious fitness industry awards, our gym
+                stands as a recognized leader, celebrated for its commitment to
+                excellence, innovation, and unwavering dedication to delivering
+                outstanding fitness services to our valued members.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="percentage-picture" style={discountBackgroundDiv}>
-            <div>
-                <span>35%</span>
-                <p>DISCOUNT</p>
-            </div>
+        <div className="percentage-picture" style={discountBackgroundDiv} >
+          <div>
+            <span>35%</span>
+            <p>DISCOUNT</p>
+          </div>
         </div>
       </div>
     </div>

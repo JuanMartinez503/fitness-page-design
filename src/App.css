@@ -261,7 +261,6 @@ z-index: 10;
 .offer-equipment{
   color:white;
   background: linear-gradient(to bottom,rgba(0,0,0,.6), rgba(0,0,0,.1));
-  padding-left: 5%;
   width: 64%;
 
   display: flex;
@@ -273,6 +272,14 @@ z-index: 10;
 .other-equipment {
   width: 47%;
   padding:5%;
+  display: flex;
+  gap: 1%;
+}
+.offer-equipment i {
+  font-size: 2rem;
+}
+.fa-dumbbell {
+  transform: rotate(-45deg);
 }
 .percentage-picture{
   width: 36% !important;
@@ -283,12 +290,13 @@ z-index: 10;
   
 }
 .offer-equipment h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 
 }
 .offer-equipment p {
   padding-top: 2%;
-  font-size: .7rem;
+  font-size: .6rem;
   line-height: 1.5;
 }
 .percentage-picture::before {
