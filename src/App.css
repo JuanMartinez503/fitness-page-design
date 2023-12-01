@@ -401,3 +401,42 @@ z-index: 10;
   height: 40dvh;
 
 }
+.fitness-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8% 3% 8%;
+}
+.fitness-title h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+.fitness-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+
+}
+.fitness-title button {
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid var(--yellow);
+  background-color: transparent;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  margin-top: 8%;
+  
+
+}
+.fitness-title button:hover {
+  transform: scale(1.1);
+}
+.gallery-pictures {
+  display: flex ;
+  margin-left: 1%;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+.gallery-pictures img {
+  width:24% ;
+  height: 40dvh;
+  box-shadow:  0 0 5px rgba(0,0,0,.3);
+  border-radius: 24px;
+}
