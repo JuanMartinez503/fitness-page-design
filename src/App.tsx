@@ -4,6 +4,7 @@ import Header from './components/Header.tsx'
 import Trainers from './components/Trainers.tsx'
 import ClassesProvided from './components/ClassesProvided.tsx'
 import FitnessGallery from './components/FitnessGallery.tsx'
+import Instructors from './components/Instructors.tsx'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Trainers />
       <ClassesProvided />
     <FitnessGallery />
+    <Instructors />
     </main>
     </>
   )
