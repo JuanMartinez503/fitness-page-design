@@ -1,30 +1,32 @@
-import {type FormEventHandler, useState, FormEvent } from "react";
+import { type FormEventHandler, useState, FormEvent } from "react";
 import robert from "../images/discount.jpg";
 export default function BMICalculator() {
-  const [weight, setWeight] = useState<number |string>('');
-  const [height, setHeight] = useState<number |string>('');
-  const [result, setResult] = useState<number >(0.0);
+  const [weight, setWeight] = useState<number | string>("");
+  const [height, setHeight] = useState<number | string>("");
+  const [result, setResult] = useState<number>(0.0);
 
   const bmiCalculatorDiv: React.CSSProperties = {
     backgroundImage: `url(${robert})`,
   };
   //BMI equation = weight(lb)/(height(in))**2 *703
-  function getHeight (e:FormEvent<HTMLInputElement>){
-    setHeight(e.target.value)
+  function getHeight(e: FormEvent<HTMLInputElement>) {
+    setHeight(e.currentTarget.value);
   }
-  function getWeight (e:FormEvent<HTMLInputElement>){
-    setWeight(e.target.value)
+  function getWeight(e: FormEvent<HTMLInputElement>) {
+    setWeight(e.currentTarget.value);
   }
 
-  function calculateBMI(e:FormEvent<HTMLFormElement >):number {
-    e.preventDefault()
-    const result:number = weight/(height*height) *703
-    console.log(result);
-    setResult(result)
-    return result
+  function calculateBMI(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const weightNumber = parseFloat(weight.toString());
+    const heightNumber = parseFloat(height.toString());
+    if (weightNumber > 0 && heightNumber > 0) {
+      const resultValue: number =
+        (weightNumber / (heightNumber * heightNumber)) * 703;
+      setResult(resultValue);
+    }
   }
-  console.log(calculateBMI);
-  
+
   return (
     <div className="calculator-container">
       <div className="testimonial">
@@ -55,7 +57,7 @@ export default function BMICalculator() {
         </div>
       </div>
       <div className="calculator" style={bmiCalculatorDiv}>
-        <form onSubmit={calculateBMI} >
+        <form onSubmit={calculateBMI}>
           <h3 className="text-center">
             BMI <span className="yellow">CALCULATOR</span>
           </h3>
@@ -82,10 +84,29 @@ export default function BMICalculator() {
             />
           </div>
           <div className="result">
-          <button type="submit" >CALCULATE</button>
-            <div>{result&&(<div>{result.toLocaleString()}</div>)}</div>
+            <button type="submit" className="btn">
+              CALCULATE
+            </button>
+            <h2>{result && <div>{result.toLocaleString()}</div>}</h2>
           </div>
         </form>
+        <div className="bmi-table">
+          <h5>BMI TABLE</h5>
+          <div className="bmi-number">
+            <h6>BMI</h6>
+            <p>Below 18.5</p>
+            <p>18.5-24.5</p>
+            <p>25.0-29.9</p>
+            <p>30 and Above</p>
+          </div>
+          <div className="weight-status">
+            <h6>Weight Status</h6>
+            <p>Underweight</p>
+            <p>Healthy Weight</p>
+            <p>Overweight</p>
+            <p>Obesity</p>
+          </div>
+        </div>
       </div>
     </div>
   );
