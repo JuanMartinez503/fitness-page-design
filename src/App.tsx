@@ -6,6 +6,7 @@ import ClassesProvided from './components/ClassesProvided.tsx'
 import FitnessGallery from './components/FitnessGallery.tsx'
 import Instructors from './components/Instructors.tsx'
 import BMICalculator from './components/BMICalbulator.tsx'
+import Blogs from './components/Blogs.tsx'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <FitnessGallery />
     <Instructors />
     <BMICalculator />
+    <Blogs />
     </main>
     </>
   )

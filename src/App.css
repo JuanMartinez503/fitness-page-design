@@ -330,7 +330,7 @@ z-index: 10;
 }
 .classes-provided p {
   line-height: 1.5;
-  padding: 0 10% 0 10%;
+  padding: 0 10% 5% 10%;
 }
 .component-classes{
   display: flex;
@@ -631,4 +631,58 @@ background-color: rgba(0,0,0,.8);
 .bmi-table p {
   border-bottom: 1px solid;
   padding: 2%;
+}
+.blogs h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 5% 0 3% 0;
+}
+.blogs p {
+  padding: 0 15% 5% 15%;
+  text-align: center;
+}
+.article-container{
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap !important;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  margin-bottom: 5%;
+}
+.article-container img {
+  width: 100%;
+  height: 35dvh;
+  border-bottom:  1px solid black;
+  border-radius: 5px 5px 0 0px;
+}
+.article-details{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  background-color: rgb(230, 227, 227);
+}
+.article-details h4 {
+  width: 50%;
+}
+.article-date {
+  color: rgb(107, 107, 107);
+}
+.article-details h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 100%;
+}
+.article-container p {
+  text-align: left;
+  width: 100%;
+  padding: 0;
+}
+.blogs-articles {
+  display: flex;
+  gap: 1%;
+  padding: 0  5% 5% 5%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
