@@ -32,9 +32,51 @@ export default function Footer (){
             </div>
             <div className="footer-flex">
                 <h2>CONTACT INFO</h2>
+                <div className='d-flex'>
+                    <h1 className="yellow">
+                    <i className="fa-solid fa-location-dot "></i>
+                    </h1>
+                    <div className='mx-1'>
+                        <h4 className="yellow">Address</h4>
+                        <p>252B, Central Street Main road <br /> Belix Tower, New York, USA</p>
+                    </div>
+
+                </div>
+                <div className='d-flex'>
+                    <h1 className="yellow">
+                    <i className="fa-solid fa-phone"></i>
+                    </h1>
+                    <div className='mx-1'>
+                        <h4 className="yellow">Phone</h4>
+                  <p>+1 (123) 456-7890</p>
+                  <p>+1 (123) 456-7890</p>
+
+                    </div>
+
+                </div>
+                <div className='d-flex'>
+                    <h1 className="yellow">
+                    <i className="fa-solid fa-globe"></i>
+                    </h1>
+                    <div className='mx-1'>
+                        <h4 className="yellow">Web</h4>
+                   <p>info@exercise.com</p>
+                   <p>www.example.com</p>
+                    </div>
+
+                </div>
             </div>
             <div className="footer-flex">
                 <h2>NEWSLETTER</h2>
+                <p>Subscribe to our newsletter to stay up to date with our location and our hours of operation. </p>
+
+                <input type="text" placeholder='Enter Email' /><button><i className="fa-regular fa-paper-plane"></i></button>
+                <div className=" social-footer">
+                <div><i className="fa-brands fa-facebook"></i></div>
+                <div> <i className="fa-solid fa-phone"></i></div>
+                <div> <i className="fa-brands fa-instagram"></i></div>
+                <div> <i className="fa-brands fa-twitter"></i></div>
+            </div>
             </div>
         </footer>
     )
