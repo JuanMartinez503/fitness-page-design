@@ -46,6 +46,7 @@ header section{
 nav {
   display: flex !important;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 4% !important;
   z-index: 3;
   position: relative;
@@ -57,9 +58,11 @@ nav {
   gap: 20px;
   justify-content: center;
   margin-right: 25%;
+  width: 30%;
+
  }
  .logo {
-  margin-left: 10%;
+  margin-left: 5%;
  }
  .yellow{
   color: rgb(242, 206, 4);
@@ -770,4 +773,71 @@ border: none;
 }
 .social-footer i:hover {
   transform: translateY(-5px);
+}
+#navbar-btn-id {
+  display: none;
+  width: 3rem;
+  padding: .3rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+background-color: rgb(216, 216, 216) !important;
+
+}
+#navbar-btn-id div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#navbar-btn-id span{
+  width: 100%;
+  border-radius: 10%;
+  height: 2px;
+  background-color: black;
+}
+.page-links-active{
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #navbar-btn-id {
+    display: block;
+
+  }
+  .page-links {
+    transform: translateX(-500%);
+
+    display: none;
+    
+  }
+  .page-links-active {
+    display: block;
+    transform: translateX(0%);
+
+    border-top: 1px solid;
+    width: 100%;
+    margin: 5% auto ;
+    transition: all .3s;
+  }
+  .page-links-active li {
+    text-align: center;
+    border-bottom: 1px solid;
+    width: 7rem;
+    margin: 2% auto;
+    padding-bottom: 2%;
+  }
+  .line {
+    transform: rotate(45deg);
+    transition: all .3s;
+
+  }
+  .line-2 {
+    transform: rotate(-45deg);
+    transition: all .3s;
+
+  }
+  .line-normal {
+    transform: rotate(360deg) !important;
+    transition: all .5s;
+  }
+
 }
