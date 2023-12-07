@@ -27,7 +27,7 @@ const [btnActive, setBtnActive]= useState<boolean>(false)
             <span className={btnActive? 'line-2':'my-2 line-normal'}></span>
          </div>
           </button>
-          <ul className={btnActive? '.page-links page-links-active': 'page-links'}>
+          <ul className={btnActive? '.page-links page-links-active translate-active': 'page-links'}>
             <li>HOME</li>
             <li>ABOUT</li>
             <li>PAGES</li>

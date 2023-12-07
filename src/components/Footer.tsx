@@ -11,8 +11,8 @@ export default function Footer (){
             <p className='my-4'>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut voluptatem tempora sint perferendis sit praesentium accusamus ea
             </p>
-            <h4 className="yellow">Operation hours</h4>
-            <p className='py-2'><strong>Monday - Friday :</strong> 7AM-10PM</p>
+            <h4 className="yellow w-100">Operation hours</h4>
+            <p className='py-2 w-100'><strong>Monday - Friday :</strong> 7AM-10PM</p>
             <p><strong>Saturday - Sunday : </strong>9AM - 8PM</p>
             </div>
             <div className="footer-flex">
