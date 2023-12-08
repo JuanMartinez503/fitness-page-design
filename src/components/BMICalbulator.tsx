@@ -1,4 +1,4 @@
-import { type FormEventHandler, useState, FormEvent } from "react";
+import { useState, FormEvent } from "react";
 import robert from "../images/discount.jpg";
 export default function BMICalculator() {
   const [weight, setWeight] = useState<number | string>("");
