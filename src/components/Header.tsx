@@ -4,13 +4,37 @@ import abWork from "../images/ab.jpg";
 import backWork from "../images/back-work.jpg";
 import ropeWork from "../images/rope-work.jpg";
 import squatting from "../images/squatting.jpg";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 
 export default function Header() {
 const [btnActive, setBtnActive]= useState<boolean>(false)
+const [width, setWidth] = useState<number>(0)
     function handleBtn ():void{
         setBtnActive(!btnActive)
+        ;
+        
     }
+   
+    useEffect(() => {
+        function handleWidth() {
+          const updatedWidth = window.innerWidth;
+            setWidth(updatedWidth)
+          if (updatedWidth > 991) {
+            setBtnActive(false);
+          }
+        }
+      
+        // Attach the event listener
+        window.addEventListener('resize', handleWidth);
+      
+        // Clean up the event listener on component unmount
+        return () => {
+          window.removeEventListener('resize', handleWidth);
+        };
+      }, [width]);
+      console.log(width);
+      
+    
     console.log(btnActive);
     
   return (
@@ -27,7 +51,7 @@ const [btnActive, setBtnActive]= useState<boolean>(false)
             <span className={btnActive? 'line-2':'my-2 line-normal'}></span>
          </div>
           </button>
-          <ul className={btnActive? '.page-links page-links-active translate-active': 'page-links'}>
+          <ul className={btnActive? '.page-links page-links-active ': 'page-links'}>
             <li>HOME</li>
             <li>ABOUT</li>
             <li>PAGES</li>
@@ -79,3 +103,4 @@ const [btnActive, setBtnActive]= useState<boolean>(false)
     </header>
   );
 }
+

@@ -1,6 +1,9 @@
 :root{
   --yellow:rgb(242, 206, 4);
 }
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
 main{
   background-color: #f5f5f5;
   overflow:  hidden !important;
@@ -52,7 +55,6 @@ nav {
   padding: 4% !important;
   z-index: 3;
   position: relative;
-  background-color: rgba(200,200,200,.2);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -64,6 +66,14 @@ nav {
   margin-right: 25%;
   width: 30%;
 
+ }
+ .page-links li{
+  font-size: .95rem;
+ }
+ .page-links li:hover {
+  color: var(--yellow);
+  transform: translateY(-3px);
+  transition: all .3s;
  }
  .logo {
   margin-left: 5%;
@@ -830,6 +840,10 @@ background-color: rgb(216, 216, 216) !important;
 .page-links-active{
   display: none;
 }
+button:hover {
+  transform: scale(1.1);
+  transition: all .3s;
+}
 
 @media screen and (max-width: 991px) {
   #navbar-btn-id {
@@ -844,17 +858,13 @@ background-color: rgb(216, 216, 216) !important;
   }
   .page-links-active {
     display: block;
-    transform: translateY(-100px);
+    
 
     border-top: 1px solid;
     width: 100%;
     margin: 5% auto ;
   }
-  .translate-active {
-    transform: translateY(50px);
-    transition: all .3s;
 
-  }
   .page-links-active li {
     text-align: center;
     border-bottom: 1px solid;
@@ -862,6 +872,11 @@ background-color: rgb(216, 216, 216) !important;
     margin: 2% auto;
     padding-bottom: 2%;
   }
+  .page-links-active li:hover {
+    color: var(--yellow);
+    transform: translateY(-3px);
+    transition: all .3s;
+   }
   .line {
     transform: rotate(45deg);
     transition: all .3s;
@@ -996,7 +1011,6 @@ text-align: center;
 }
 @media screen and (max-width: 590px) {
   .classes-offered {
-    top: 15%;
-    left: 50%;
+margin: 2% auto;
   }
 }

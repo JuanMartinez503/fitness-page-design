@@ -77,7 +77,12 @@ export default function Footer (){
                 <div> <i className="fa-brands fa-instagram"></i></div>
                 <div> <i className="fa-brands fa-twitter"></i></div>
             </div>
+            <div className="text-center my-4">
+                <div className='my-2'>Designed: <a href="https://www.behance.net/gallery/182788853/Fitness-Website-Design" target="_blank" rel="noopener noreferrer">Jeremy Johnson</a></div>
+                <p>Developed: <a href="http://juanmartinez.io" target="_blank" rel="noopener noreferrer">Juan Martinez</a></p>
             </div>
+            </div>
+      
         </footer>
     )
 }
