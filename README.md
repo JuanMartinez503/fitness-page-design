@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Fitness Page Design 
+## Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website was developed to bring to life the design provided by [Jeremy Johnson](https://www.behance.net/gallery/182788853/Fitness-Website-Design). It serves as a platform to showcase my abilty to developed a landing page from a design.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+<img width="1195" alt="Screenshot 2023-12-08 at 10 41 38 AM" src="https://github.com/JuanMartinez503/fitness-page-design/assets/116415860/09c1f2ae-14a2-4a5a-a3ab-9053fb2dac2c">
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- HTML
+- CSS
+- TypeScript
+- React
+- BootStrap 5
