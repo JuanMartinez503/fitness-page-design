@@ -1,7 +1,7 @@
 # Fitness Page Design 
 ## Description
 
-This website was developed to bring to life the design provided by [Jeremy Johnson](https://www.behance.net/gallery/182788853/Fitness-Website-Design). It serves as a platform to showcase my abilty to developed a landing page from a design.
+This website was developed to bring to life the design provided by [Jeremy Johnson](https://www.behance.net/gallery/182788853/Fitness-Website-Design). It serves to showcase my abilty to developed a landing page from a design.
 
 ## Screenshots
 
